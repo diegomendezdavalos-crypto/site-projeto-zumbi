@@ -1,0 +1,341 @@
+body {
+  font-family: 'Nosifer', sans-serif;
+  margin: 0;
+  background-color:  #8a8485;
+  color: #0c0b0b;
+}
+
+header {
+  background-color: red;
+  color: black;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center; 
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #181717;
+}
+
+.parallax {
+  background-image: url("banner.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  position: relative; 
+}
+
+.parallax h1 {
+  font-size: 4em;
+  text-shadow: 2px 2px 5px  rgb(31, 31, 141);
+}
+
+.banner-content {
+  position: relative; 
+  z-index: 1; 
+  text-align: center;
+}
+
+.banner-content h1 {
+  color: #fff;
+  text-shadow: 2px 2px 5px rgb(33, 33, 146);
+}
+
+section {
+  padding: 50px;
+  text-align: center;
+}
+
+#introducao {
+  background-color: #c90404
+}
+
+#abrigos {
+  background-color: #919a91
+}
+
+#armas {
+  background-color: #8a8485
+}
+
+#fuga {
+  background-color: #47383b
+}
+
+#zumbis-especiais {
+  background-color: #8a8485
+}
+
+#contato {
+  background-color: red;
+  text-align: center; 
+  padding: 50px 0; 
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 40px;
+}
+
+.zumbis-especiais {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.inimigo {
+  margin: 20px;
+  width: 200px;
+  text-align: center;
+  border: 1px solid #6d2525;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #ddd;
+  transition: transform 0.3s ease; 
+}
+
+.inimigo img {
+  width: 180px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.inimigo:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.contador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contador span {
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+
+.display {
+  display: flex;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.display span {
+  margin-right: 5px;
+}
+
+
+#contato form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  margin: 0 auto;
+}
+
+#contato input[type="text"],
+#contato input[type="email"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; 
+}
+
+#contato button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; 
+}
+
+#contato button:hover {
+  background-color: #0056b3;
+}
+
+
+nav {
+  text-align: center; 
+}
+
+nav ul {
+  display: inline-block; 
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+
+.equipe-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  gap: 20px;
+}
+
+.membro {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid rgb(170, 64, 64); 
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #ddd;
+  width: 300px; 
+  position: relative; 
+  overflow: hidden; 
+  transition: transform 0.3s ease; 
+}
+
+.membro img {
+  width: 150px; 
+  height: auto; 
+  border-radius: 50%; 
+  margin-bottom: 10px;
+}
+
+.membro:hover {
+  transform: scale(1.1); 
+}
+
+.membro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+}
+
+.membro:hover::before {
+  opacity: 1; 
+}
+
+
+.alerta-zumbi {
+  background-color: red;
+  color: whitesmoke;
+  font-size: 20px;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 0, 76, 0.8);
+  animation: tremor 0.8s  infinite; 
+}
+
+.alerta-zumbi:hover {
+  background-color: darkred;
+}
+
+@keyframes tremor {
+  0% { transform: translateX(0); }
+  10% { transform: translateX(-2px); }
+  20% { transform: translateX(2px); }
+  30% { transform: translateX(-2px); }
+  40% { transform: translateX(2px); }
+  50% { transform: translateX(0); }
+}
+
+
+.grid-item {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid white; 
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #9b2929;
+  transition: transform 0.3s ease; 
+  position: relative; 
+  overflow: hidden; 
+}
+
+.grid-item img {
+  width: 150px; 
+  height: 150px; 
+  margin-bottom: 6px;
+}
+
+.grid-item:hover {
+  transform: scale(1.1); 
+}
+
+.grid-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+}
+
+.grid-item:hover::before {
+  opacity: 1; 
+}
